@@ -18,5 +18,7 @@ namespace LojaDasGurias.Domain.Entities
 
         public string Nome { get; private set; }
         public DateTime DataDeNascimento { get; private set; }
+        public string Telefone { get; private set; }    
+        public string Endereco { get; private set; }    
     }
 }
