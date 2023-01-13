@@ -8,12 +8,21 @@ namespace LojaDasGurias.Domain.Entities
 {
     public class Produto
     {
-        public string Marca { get; set; }
-        public string Tipo { get; set; }
-        public string Nome { get; set; }
-        public string Linha { get; set; }
-        public string Fragrancia { get; set; }
-        public string Cor { get; set; }
+        public string Marca { get; private set; }
+        public string Tipo { get; private set; }
+        public string Nome { get; private set; }
+        public string Linha { get; private set; }
+        public int Quantidade { get; private set; }
 
+        public Produto(string marca, string tipo, string nome, string linha, int quantidade)
+        {
+            Marca = marca;
+            Tipo = tipo; ;
+            Nome = nome;
+            Linha = linha;
+            Quantidade = quantidade; 
+        }
+        
     }
+    
 }
